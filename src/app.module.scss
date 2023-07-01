@@ -1,0 +1,183 @@
+//-----------------------------------//
+//             # Обнуление           //
+//-----------------------------------//
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+//----- Убрать стрелки у input number -----//
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+//-----------------------------------//
+//         # Конец Обнуления         //
+//-----------------------------------//
+
+
+
+//-----------------------------------//
+//          # Общие Стили            //
+//-----------------------------------//
+.wrapper {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2A2A2A, #161616);
+  padding: 0px 9.375vw;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+//-----------------------------------//
+//       # Конец Общих Стилей        //
+//-----------------------------------//
+
+
+
+//-----------------------------------//
+//              # Шрифты             //
+//-----------------------------------//
+@font-face {
+  font-family: 'Benzin';
+  src: url('./assets/fonts/Benzin-Regular.eot');
+  src: local('Benzin Regular'), local('Benzin-Regular'),
+    url('./assets/fonts/Benzin-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Benzin-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Benzin-Regular.woff') format('woff'),
+    url('./assets/fonts/Benzin-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Benzin';
+  src: url('./assets/fonts/Benzin-Medium.eot');
+  src: local('./assets/fonts/Benzin Medium'), local('Benzin-Medium'),
+    url('./assets/fonts/Benzin-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Benzin-Medium.woff2') format('woff2'),
+    url('./assets/fonts/Benzin-Medium.woff') format('woff'),
+    url('./assets/fonts/Benzin-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Regular.eot');
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+    url('./assets/fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-Regular.woff') format('woff'),
+    url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Medium.eot');
+  src: local('Montserrat Medium'), local('Montserrat-Medium'),
+    url('./assets/fonts/Montserrat-Medium.eot?#iefix') format('embedded-opentype'),
+    url('./assets/fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('./assets/fonts/Montserrat-Medium.woff') format('woff'),
+    url('./assets/fonts/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+//-----------------------------------//
+//         # Конец Шрифтов           //
+//-----------------------------------//

@@ -1,0 +1,118 @@
+.block {
+  margin: 0px 0px 7vw 0px;
+
+  @media (max-width: 426px) {
+    margin: 0px 0px 50px 0px;
+  }
+}
+
+.body {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px -5.9vw;
+}
+
+.left,
+.right {
+  flex: 1 1 50%;
+  padding: 0px 5.9vw;
+
+  @media (max-width: 1100px) {
+    text-align: center;
+  }
+}
+
+.img {
+  position: relative;
+  background-color: #525252;
+  width: calc(260px + 160 * (100vw / 1440));
+  height: calc(164px + 100 * (100vw / 1440));
+  margin: 0px 0px 5.3vw 0px;
+  border-radius: 15px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 23%;
+    left: 12%;
+    background-color: #FFC47E;
+    width: calc(46px + 29 * (100vw / 1440));
+    height: calc(34px + 20 * (100vw / 1440));
+    border-radius: 8px;
+
+    @media (max-width: 769px) {
+      width: calc(46px + 29 * ((100vw - 320px) / 1440));
+      height: calc(34px + 20 * ((100vw - 320px) / 1440));
+    }
+  }
+
+  @media (max-width: 1100px) {
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+
+  @media (max-width: 769px) {
+    width: calc(260px + 160 * ((100vw - 320px) / 1440));
+    height: calc(164px + 100 * ((100vw - 320px) / 1440));
+  }
+
+  @media (max-width: 426px) {
+    margin: 0px 0px 35px 0px;
+  }
+}
+
+.left .img {
+  transition: 3s ease;
+
+  &:hover {
+    transform: rotate3d(0, 1, 0, 180deg) rotate3d(0, 0, 1, -354deg);
+  }
+}
+
+.right .img {
+  // margin: 0px 0px 8.3vw 0px;
+  transform: rotate(-6deg);
+  transition: 0.75s ease;
+
+  &:hover {
+    transform: rotate3d(0, 1, 0, 180deg) rotate3d(0, 0, 1, -6deg);
+
+    @media (max-width: 1100px) {
+      left: 24%;
+    }
+  }
+
+  @media (max-width: 1100px) {
+    transform: rotate(-6deg) translate(-50%, 0%);
+  }
+}
+
+.title {
+  color: #9B9B9B;
+  margin: 0px 0px 24px 0px;
+  font-family: 'Benzin';
+  line-height: 156%;
+  font-size: calc(18px + 14 * (100vw / 1440));
+
+  @media (max-width: 769px) {
+    font-size: calc(18px + 14 * ((100vw - 320px) / 1440));
+  }
+}
+
+.text {
+  color: #9B9B9B;
+  margin: 0px 0px 47px 0px;
+  font-family: 'Montserrat';
+  font-size: calc(14px + 10 * (100vw / 1440));
+  line-height: 150%;
+
+  @media (max-width: 769px) {
+    font-size: calc(14px + 10 * ((100vw - 320px) / 1440));
+  }
+}
+
+.btn {
+  @media (max-width: 1100px) {
+    margin: 0px 0px 50px 0px;
+  }
+}

@@ -1,0 +1,21 @@
+.line {
+  color: #9B9B9B;
+  width: 100vw;
+  margin: 0px -9.35vw;
+  padding: 5px 9.35vw;
+  border-top: 1px solid #9B9B9B;
+  border-bottom: 1px solid #9B9B9B;
+
+  font-family: 'Benzin';
+  font-size: calc(20px + 18 * (100vw / 1440));
+  line-height: 150%;
+
+  @media (max-width: 769px) {
+    font-size: calc(20px + 18 * ((100vw - 320px) / 1440));
+    text-align: center;
+  }
+
+  @media (max-width: 426px) {
+    margin: 0px -9.35vw 35px -9.35vw;
+  }
+}

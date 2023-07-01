@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  color: #9B9B9B;
+  background-color: #3E3E3E;
+  padding: 12px 10%;
+  border: 1px solid #9B9B9B;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s ease;
+
+  font-family: 'Benzin';
+  font-size: calc(12px + 4 * (100vw / 1440));
+  line-height: 150%;
+
+  &:hover {
+    color: #3E3E3E;
+    background-color: #9B9B9B;
+  }
+
+  @media (max-width: 769px) {
+    font-size: calc(12px + 4 * ((100vw - 320px) / 1440));
+  }
+}
