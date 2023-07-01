@@ -16,7 +16,7 @@ const Advantages: FC = () => {
           <AdvantagesCard imgPath={"img/Advantages/card-2.svg"} imgName={"card-2"} title={"Безопасно"}
             text={"Используем сквозное шифрование и даем гарантии что ваши данные будут в безопасности "} />
           <AdvantagesCard imgPath={"img/Advantages/card-3.svg"} imgName={"card-3"} title={"Быстро"}
-            text={"Всего 5 - 10 рабочих дней и ваш кредит будет уже одобрен"} />
+            text={"Несколько дней и ваш кредит будет одобрен"} />
           <AdvantagesCard imgPath={"img/Advantages/card-1.svg"} imgName={"card-1"} title={"Удобно"}
             text={"Лишь пол часа вашего времени для заполнения формы. Остальное мы сделаем за вас"} />
         </div>

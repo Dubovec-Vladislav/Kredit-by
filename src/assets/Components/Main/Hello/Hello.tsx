@@ -12,7 +12,7 @@ const Hello: FC = () => {
     <div className={style.block} id="hello">
       <div className={style.body}>
         <div className={style.textSide}>
-          <div className={style.title}>Кампания Kredit.by</div>
+          <div className={style.title}>Компания Kredit.by</div>
           <div className={style.text}>
             Индивидуальные решения для кредитной документации: получите кредит онлайн с легкостью и надежностью
           </div>
