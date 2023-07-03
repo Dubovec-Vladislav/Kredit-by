@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import style from './Hello.module.scss'
 import Button from '../../General/Button/Button'
+import { Link } from 'react-scroll'
 
 
 // --------------------------------------------- //
@@ -16,7 +17,9 @@ const Hello: FC = () => {
           <div className={style.text}>
             Индивидуальные решения для кредитной документации: получите кредит онлайн с легкостью и надежностью
           </div>
-          <Button text={"Создать дизайн"} />
+          <Link to={"request"} spy={true} smooth={true} offset={-60} duration={500}>
+            <Button text={"Оставить заявку"} />
+          </Link>
         </div>
         <div className={style.imgSide}>
           <img src="/img/leo.png" alt="" />

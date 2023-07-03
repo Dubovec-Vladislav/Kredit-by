@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import './Main.scss'
 import Hello from './Hello/Hello'
 import Comparison from './Comparison/Comparison'
@@ -14,6 +14,10 @@ import Clients from './Clients/Clients'
 // --------------------------------------------- //
 
 const Main: FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="main">
       <Hello />

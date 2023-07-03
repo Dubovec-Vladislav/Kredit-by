@@ -17,7 +17,7 @@ const Clients: FC = () => {
           <ClientsCard text={"Юридические лица"} to={"legal-entities"} />
           <ClientsCard text={"Индивидуальные предприниматели"} to={"individual-entrepreneurs"} />
           <ClientsCard text={"Коммерческие банки"} to={"commercial-banks"} />
-          <ClientsCard text={"Другие"} to={"other-users"} />
+          <ClientsCard text={"В разработке"} to={""} />
         </div>
       </div>
     </div>

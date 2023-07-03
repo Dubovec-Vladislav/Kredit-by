@@ -1,8 +1,8 @@
 import React, { useState, FC, MouseEvent } from 'react'
 import style from './Header.module.scss'
 import BurgerMenu from './BurgerMenu'
-import { Link } from "react-scroll"
 import { NavLink } from 'react-router-dom'
+import MyLink from './MyLink'
 
 
 // --------------------------------------------- //
@@ -47,62 +47,6 @@ const Header: FC<IHeaderProps> = ({ handlePopupClick }) => {
 
 // --------------------------------------------- //
 //                   End Header                  //
-// --------------------------------------------- //
-
-
-
-// --------------------------------------------- //
-//                 # Header link                 //
-// --------------------------------------------- //
-
-interface IMyLinkProps extends IHeaderProps {
-  name: string;
-  to?: string;
-  thisPageLink?: boolean;
-  popup?: boolean;
-}
-
-const MyLink: FC<IMyLinkProps> = ({ name, to, thisPageLink, popup, handlePopupClick }) => {
-  return (
-    <>
-      {thisPageLink ?
-        popup ?
-          <li className={style.item}>
-            <Link className={style.link}
-              to={"hello"}
-              spy={true}
-              smooth={true}
-              offset={-140}
-              duration={500}
-              onClick={handlePopupClick}
-            >
-              {name}
-            </Link>
-          </li>
-          :
-          <li className={style.item}>
-            <Link
-              className={style.link}
-              to={to || ""}
-              spy={true}
-              smooth={true}
-              offset={-60}
-              duration={500}
-            >
-              {name}
-            </Link>
-          </li>
-        :
-        <li className={style.item}>
-          <NavLink className={style.link} to={to || ""}>{name}</NavLink>
-        </li>
-      }
-    </>
-  );
-};
-
-// --------------------------------------------- //
-//                 End Header Link               //
 // --------------------------------------------- //
 
 
