@@ -2,6 +2,15 @@ import React, { FC, useEffect, useState } from 'react'
 import style from './CustomerRequests.module.scss'
 import Button from '../General/Button/Button'
 import { Link, NavLink } from 'react-router-dom'
+import InputItem from './FormComponents/Input'
+import TextAreaItem from './FormComponents/TextArea'
+import Select from './FormComponents/Select'
+import Checkbox from './FormComponents/Checkbox'
+
+
+// --------------------------------------------- //
+//           # Customer requests form            //
+// --------------------------------------------- //
 
 interface ICustomerRequestsProps {
   id: number;
@@ -19,7 +28,7 @@ const CustomerRequests: FC<ICustomerRequestsProps> = ({ id }) => {
   }, []);
 
   let fields = <></>;
-  // для ИП вот такое: ФИО, УНП,  адрес регистрации, телефон, сайт, почта.
+
   switch (id) {
     case 1:
       fields = <>
@@ -31,8 +40,10 @@ const CustomerRequests: FC<ICustomerRequestsProps> = ({ id }) => {
         <InputItem typeOfField={"number"} fieldName={"Номер телефона"} fieldPlaceholder={"+375 00 000-00-00"} />
         <InputItem typeOfField={"text"} fieldName={"Ссылка на сайт (при наличии)"} fieldPlaceholder={"https://example.com"} />
         <InputItem typeOfField={"email"} fieldName={"Почта"} fieldPlaceholder={"example@gmail.com"} />
+        <Select fieldName={"Для каких целей вам нужен кредит"} fieldPlaceholder={"Список экономических показателей"} />
         <TextAreaItem fieldName={"Краткая характеристика"} fieldPlaceholder={"Краткая характеристика вашей компании (фирмы)"} />
         <TextAreaItem fieldName={"Показатели"} fieldPlaceholder={"Список экономических показателей"} />
+        <Checkbox />
       </>
       break;
     case 2:
@@ -75,37 +86,9 @@ const CustomerRequests: FC<ICustomerRequestsProps> = ({ id }) => {
   );
 };
 
+// --------------------------------------------- //
+//           End Customer requests form          //
+// --------------------------------------------- //
 
-interface IInputItemProps {
-  typeOfField: string;
-  fieldName: string;
-  fieldPlaceholder: string;
-}
-
-const InputItem: FC<IInputItemProps> = ({ typeOfField, fieldName, fieldPlaceholder }) => {
-  return (
-    <div className={style.item}>
-      <label className={style.itemLabel}>{fieldName}</label>
-      <div className={style.itemField}><input type={typeOfField} placeholder={fieldPlaceholder} /></div>
-    </div>
-  );
-}
-
-
-interface ITextAreaProps {
-  fieldName: string;
-  fieldPlaceholder: string;
-}
-
-const TextAreaItem: FC<ITextAreaProps> = ({ fieldName, fieldPlaceholder }) => {
-  return (
-    <div className={style.item}>
-      <label className={style.itemLabel}>{fieldName}</label>
-      <div className={style.itemField}>
-        <textarea className={style.textArea} placeholder={fieldPlaceholder}></textarea>
-      </div>
-    </div>
-  );
-}
 
 export default CustomerRequests;
