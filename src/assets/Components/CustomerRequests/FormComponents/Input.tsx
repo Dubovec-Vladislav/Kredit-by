@@ -1,13 +1,13 @@
 import React, { FC } from 'react'
 import style from '../CustomerRequests.module.scss'
 
-interface IInputItemProps {
+interface IInputProps {
   typeOfField: string;
   fieldName: string;
   fieldPlaceholder: string;
 }
 
-const InputItem: FC<IInputItemProps> = ({ typeOfField, fieldName, fieldPlaceholder }) => {
+const InputItem: FC<IInputProps> = ({ typeOfField, fieldName, fieldPlaceholder }) => {
   return (
     <div className={style.item}>
       <label className={style.itemLabel}>{fieldName}</label>

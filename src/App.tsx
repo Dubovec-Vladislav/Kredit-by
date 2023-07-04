@@ -22,7 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/legal-entities" element={<CustomerRequests id={1}/>} />
-        <Route path="/individual-entrepreneurs" element={<CustomerRequests id={1}/>} />
+        <Route path="/individual-entrepreneurs" element={<CustomerRequests id={2}/>} />
         <Route path="/commercial-banks" element={<CustomerRequests id={3}/>} />
         <Route path="/other-users" element={<CustomerRequests id={4}/>} />
       </Routes>

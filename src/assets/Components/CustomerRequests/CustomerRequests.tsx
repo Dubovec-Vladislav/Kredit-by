@@ -32,6 +32,25 @@ const CustomerRequests: FC<ICustomerRequestsProps> = ({ id }) => {
   switch (id) {
     case 1:
       fields = <>
+        <InputItem typeOfField={"text"} fieldName={"Наименование организации"} fieldPlaceholder={"Марко"} />
+        <InputItem typeOfField={"number"} fieldName={"УНП"} fieldPlaceholder={"MPXXXXXXX"} />
+        <InputItem typeOfField={"text"} fieldName={"Адрес Регистрации"} fieldPlaceholder={"ул.Рязко 14, г.Литейный"} />
+        <InputItem typeOfField={"number"} fieldName={"Номер телефона"} fieldPlaceholder={"+375 00 000-00-00"} />
+        <InputItem typeOfField={"text"} fieldName={"Ссылка на сайт (при наличии)"} fieldPlaceholder={"https://example.com"} />
+        <InputItem typeOfField={"email"} fieldName={"Почта"} fieldPlaceholder={"example@gmail.com"} />
+        <Select fieldName={"Для каких целей вам нужен кредит"} fieldPlaceholder={"Список экономических показателей"} />
+        <TextAreaItem fieldName={"Краткая характеристика"} fieldPlaceholder={"Краткая характеристика вашей компании (фирмы)"} />
+        <TextAreaItem fieldName={"Показатели"} fieldPlaceholder={"Список экономических показателей"} />
+        <Checkbox id={1} fieldName={"Беларусь Банк"} />
+        <Checkbox id={2} fieldName={"Сбер Банк"} />
+        <Checkbox id={3} fieldName={"Альфа Банк"} />
+        <Checkbox id={4} fieldName={"Белагропром Банк"} />
+        <Checkbox id={5} fieldName={"Банк Решение"} />
+        <Checkbox id={6} fieldName={"ВТБ Банк"} />
+      </>
+      break;
+    case 2:
+      fields = <>
         <InputItem typeOfField={"text"} fieldName={"Фамилия"} fieldPlaceholder={"Куликов"} />
         <InputItem typeOfField={"text"} fieldName={"Имя"} fieldPlaceholder={"Владимир"} />
         <InputItem typeOfField={"text"} fieldName={"Отчество"} fieldPlaceholder={"Николаевич"} />
@@ -43,12 +62,12 @@ const CustomerRequests: FC<ICustomerRequestsProps> = ({ id }) => {
         <Select fieldName={"Для каких целей вам нужен кредит"} fieldPlaceholder={"Список экономических показателей"} />
         <TextAreaItem fieldName={"Краткая характеристика"} fieldPlaceholder={"Краткая характеристика вашей компании (фирмы)"} />
         <TextAreaItem fieldName={"Показатели"} fieldPlaceholder={"Список экономических показателей"} />
-        <Checkbox />
-      </>
-      break;
-    case 2:
-      fields = <>
-        <InputItem typeOfField={"number"} fieldName={"Номер телефона"} fieldPlaceholder={"+375 00 000-00-00"} />
+        <Checkbox id={1} fieldName={"Беларусь Банк"} />
+        <Checkbox id={2} fieldName={"Сбер Банк"} />
+        <Checkbox id={3} fieldName={"Альфа Банк"} />
+        <Checkbox id={4} fieldName={"Белагропром Банк"} />
+        <Checkbox id={5} fieldName={"Банк Решение"} />
+        <Checkbox id={6} fieldName={"ВТБ Банк"} />
       </>
       break;
     case 3:
