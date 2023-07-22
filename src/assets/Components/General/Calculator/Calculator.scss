@@ -1,17 +1,17 @@
 .calculator {
 
   &__block {
-    margin: 0px 0px 50px 0px;
+    margin: 0px 0px 5.9vw 0px;
   }
 
   &__body {}
 
   &__output-block {
     display: flex;
-    color:  #9B9B9B;
+    color: #9B9B9B;
     align-items: center;
     justify-content: center;
-    padding: 0px 0px 5vw 0px;
+    padding: 0px 0px 3vw 0px;
     font-family: 'Montserrat';
     font-size: 52px;
     font-weight: 500;
@@ -27,12 +27,25 @@
     flex-wrap: wrap;
   }
 
-  &__input {
+  &__input-text {
+    width: 100%;
+  }
+
+  &__input-item {
     flex: 1 1 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 0px 5.9vw;
+  }
+
+  &__input-text {
+    color: #9B9B9B;
+    margin: 0px 0px 10px 0px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  &__input {
+    width: 100%;
 
     input {
       flex: 1 0 70%;
@@ -43,9 +56,8 @@
 
     span {
       flex: 1 0 30%;
-      color: #9B9B9B;
       display: inline-block;
-      padding: 0px 0px 0px 20px;
+      color: #9B9B9B;
       text-align: center;
       font-family: 'Montserrat';
       font-size: 18px;

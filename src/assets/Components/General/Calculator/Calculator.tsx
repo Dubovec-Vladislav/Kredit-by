@@ -3,7 +3,7 @@ import './Calculator.scss'
 
 const Calculator: FC = (props) => {
   const [procent, setProcent] = useState(13);
-  const [cash, setCash] = useState(300);
+  const [cash, setCash] = useState(750);
   const OUR_PROCENT = 5;
   const totalCash = Math.round(cash + (procent / 100) * cash + (OUR_PROCENT / 100) * cash);
 
@@ -24,13 +24,19 @@ const Calculator: FC = (props) => {
           </div>
         </div>
         <div className="calculator__input-block">
-          <div className="calculator__input">
-            <input type="range" min={6} max={33} step={1} value={procent} onChange={handleProcentChange}></input>
-            <span>{procent}%</span>
+          <div className="calculator__input-item">
+            <div className="calculator__input-text">Процентная ставка:</div>
+            <div className="calculator__input">
+              <input type="range" min={6} max={33} step={1} value={procent} onChange={handleProcentChange}></input>
+              <span>{procent}%</span>
+            </div>
           </div>
-          <div className="calculator__input">
-            <input type="range" min={100} max={10_000} step={150} value={cash} onChange={handleCashChange}></input>
-            <span>{cash} руб.</span>
+          <div className="calculator__input-item">
+            <div className="calculator__input-text">Денежная сумма:</div>
+            <div className="calculator__input">
+              <input type="range" min={100} max={10_000} step={150} value={cash} onChange={handleCashChange}></input>
+              <span>{cash} руб.</span>
+            </div>
           </div>
         </div>
       </div>
