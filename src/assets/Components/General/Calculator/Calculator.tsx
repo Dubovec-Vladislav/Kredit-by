@@ -20,7 +20,7 @@ const Calculator: FC = (props) => {
       <div className="calculator__body">
         <div className="calculator__output-block">
           <div className="calculator__output">
-            Итоговая сумма - {totalCash} руб.
+            Итоговая сумма: {totalCash} руб.
           </div>
         </div>
         <div className="calculator__input-block">
