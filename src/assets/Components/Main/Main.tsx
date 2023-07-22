@@ -7,6 +7,7 @@ import Advantages from './Advantages/Advantages'
 import Map from './Map/Map'
 // import CardSlider from './CardSlider/CardSlider'
 import Clients from './Clients/Clients'
+import Calculator from '../General/Calculator/Calculator'
 
 
 // --------------------------------------------- //
@@ -21,6 +22,7 @@ const Main: FC = () => {
   return (
     <div className="main">
       <Hello />
+      <Calculator/>
       <Comparison />
       <Advantages />
       {/* <DesignSlider /> */}

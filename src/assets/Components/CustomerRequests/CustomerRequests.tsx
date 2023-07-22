@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from 'react'
+import React, { FC, HtmlHTMLAttributes, useEffect, useState } from 'react'
 import style from './CustomerRequests.module.scss'
 import Button from '../General/Button/Button'
 import { Link, NavLink } from 'react-router-dom'
